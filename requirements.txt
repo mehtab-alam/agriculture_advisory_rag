@@ -1,0 +1,96 @@
+# Python dependencies will be listed here
+
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+pandas
+numpy
+pyyaml
+tqdm
+python-dotenv
+openpyxl
+# ============================================================================
+# TEXT PROCESSING & SEGMENTATION
+# ============================================================================
+nltk                  # TextTiling, Punkt tokenizer
+gensim               # TopicTiling (LDA)
+scikit-learn        # General ML utilities
+networkx              # GraphSeg (graph-based segmentation)
+beautifulsoup4
+rake_nltk
+rapidfuzz
+
+# ============================================================================
+# EMBEDDINGS & DENSE RETRIEVAL
+# ============================================================================
+sentence-transformers
+faiss-cpu          # Use faiss-gpu if you have a GPU
+rank-bm25           # Lexical retrieval (BM25)
+
+# ============================================================================
+# TERMINOLOGY EXTRACTION
+# ============================================================================
+#pke                 # Statistical keyphrase extraction (replaces BioTeX)
+fastr              # Rule‑based term extraction (FastR)
+# If fastr is not available, use: git+https://github.com/ArB0G/FastR.git
+git+https://github.com/jacquesfize/Biotex4Py.git   # BioTex for terminology extraction
+spacy<3.8.0
+#spacy                          # Required by Biotex4Py
+# After installing spacy, download language models:
+# spaCy model for English
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl  
+# English
+#https://huggingface.co/spacy/fr_core_news_sm/resolve/main/fr_core_news_sm-any-py3-none-any.whl
+# French
+dframcy
+
+
+# ============================================================================
+# NAMED ENTITY RECOGNITION (GLINER)
+# ============================================================================
+gliner
+transformers
+torch
+torchvision
+#torchaudio
+#tensorflow-macos
+#tensorflow-metal
+geonamescache
+networkx
+
+
+
+
+# ============================================================================
+# LLM INTERFACES
+# ============================================================================
+openai>=1.0.0
+#anthropic>=0.7.0
+
+# ============================================================================
+# EVALUATION METRICS
+# ============================================================================
+rouge-score
+bert-score
+
+# ============================================================================
+# VISUALISATION (optional, for notebooks)
+# ============================================================================
+matplotlib
+seaborn
+plotly>=6.1.1
+kaleido
+
+####
+
+codecarbon
+
+#### For server
+
+#thinc>=8.2.0,<8.3.0          # last versions with NumPy 1.x support
+
+#numpy				#>=1.24.0,<2.0.0
+tensorflow
+Ollama
+
