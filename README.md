@@ -161,16 +161,4 @@ print(answer)
 - GPU users should install `faiss-gpu` instead of `faiss-cpu`, and ensure the correct CUDA-enabled `torch` build is installed.
 - `tensorflow` and `Ollama` (capitalized) entries near the end of `requirements.txt` appear environment-specific (server setup) — verify they're needed for your platform before installing.
 
-## Troubleshooting
 
-| Issue | Resolution |
-|---|---|
-| `LookupError: punkt not found` | The script auto-downloads it; ensure outbound internet access on first run |
-| `OSError: [E050] Can't find model 'en_core_web_sm'` | Run `python -m spacy download en_core_web_sm` |
-| Ollama model not found | Run `ollama pull <model_name>` for the model specified in `generate_llm_response` / `reformulate_query_generic` |
-| No chunks loaded | Verify `chunk_cache_dir` contains the expected `.pkl` files matching `chunks_files` |
-| Lexicon file not found | Ensure `data/lexicon/{corpus_id}.xlsx` exists with a `term` column |
-
-## License
-
-Add your project's license information here.
